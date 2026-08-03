@@ -38,20 +38,28 @@
   }
 
   // ================= session =================
-  function buildPlan() {
-    var focus = E.nextFocus();
-    var review = E.reviewPool().slice(0, 2);
+  function buildPlan(forcedFocus) {
+    var focus = forcedFocus || E.nextFocus();
     var plan = [];
-    review.forEach(function (r) { plan.push(r); });
+    if (!forcedFocus) {
+      var review = E.reviewPool().slice(0, 2);
+      review.forEach(function (r) { plan.push(r); });
+    }
     while (plan.length < QUESTIONS_PER_SESSION) plan.push(focus);
     return { focus: focus, plan: plan };
   }
 
-  function startSession() {
-    var p = buildPlan();
+  // forcedSlug: set when the child (or grown-up) picked this skill directly
+  // from the skill map, rather than letting the app choose. A forced session
+  // stays on that one skill for all ten questions -- including when it is
+  // already mastered, so a deliberate revisit keeps refining the score from
+  // wherever its track record left off, instead of being swapped away.
+  function startSession(forcedSlug) {
+    var p = buildPlan(forcedSlug);
     session = {
       focus: p.focus, plan: p.plan, i: 0, results: [],
-      tier: {}, runRight: {}, runWrong: {}, mastered: [], correct: 0
+      tier: {}, runRight: {}, runWrong: {}, mastered: [], correct: 0,
+      forced: !!forcedSlug
     };
     E.markPractised();
     askQuestion();
@@ -60,7 +68,8 @@
   function currentSlug() {
     var slug = session.plan[session.i];
     // if the focus skill got mastered mid-session, move on to the next one
-    if (slug === session.focus && E.isMastered(slug)) {
+    // -- unless this skill was picked on purpose, in which case stay put.
+    if (!session.forced && slug === session.focus && E.isMastered(slug)) {
       var next = E.nextFocus();
       if (next !== slug) {
         session.focus = next;
@@ -255,7 +264,7 @@
       '<button class="big-btn apricot" id="again">Play again</button> ' +
       '<button class="big-btn sky" id="home">Finish</button>' +
       '</div>');
-    node.querySelector('#again').onclick = startSession;
+    node.querySelector('#again').onclick = function () { startSession(session.forced ? session.focus : undefined); };
     node.querySelector('#home').onclick = home;
     show(node);
   }
@@ -316,8 +325,9 @@
   function detailHTML(slug, isFocus) {
     var sk = E.SKILL[slug], r = E.rec(slug);
     var sec = E.SECTION[sk.section];
+    var locked = !r && !E.ready(slug);
     var state = r ? (r.status === 'mastered' ? (E.needsReview(slug) ? 'mastered — worth a refresh' : 'mastered') : 'started, still building')
-      : (E.ready(slug) ? 'ready to try' : 'waiting on earlier skills');
+      : (locked ? 'waiting on earlier skills' : 'ready to try');
     var pre = (sk.prerequisiteSkillIds || []).map(function (p) {
       return '<span class="prereq' + (E.isMastered(p) ? ' ok' : '') + '">' + esc(E.SKILL[p].title) + '</span>';
     }).join('');
@@ -326,7 +336,13 @@
       '<div class="drow">' + (r ? bar(E.effective(slug)) : '<div class="bar"></div><div class="pct">—</div>') +
       '<span class="dstate">' + state + '</span>' +
       (r ? '<span class="pill">' + r.correct + '/' + r.attempts + ' right</span>' : '') + '</div>' +
-      (pre ? '<div class="dpre"><b>Needs first:</b> ' + pre + '</div>' : '<div class="dpre"><b>Needs first:</b> nothing — this is a starting skill</div>');
+      (pre ? '<div class="dpre"><b>Needs first:</b> ' + pre + '</div>' : '<div class="dpre"><b>Needs first:</b> nothing — this is a starting skill</div>') +
+      (locked ? '' : '<div class="btnrow" style="margin-top:10px"><button class="mini" id="practice" data-slug="' + slug + '">Practice this skill</button></div>');
+  }
+
+  function wirePracticeButton(container) {
+    var btn = container && container.querySelector('#practice');
+    if (btn) btn.onclick = function () { startSession(btn.dataset.slug); };
   }
 
   function grownUp(tab) {
@@ -399,7 +415,8 @@
         });
         body += '</div></div>';
       });
-      body += '<div class="note">Tap any dot to see that skill. The tree runs top to bottom in teaching order, ' +
+      body += '<div class="note">Tap any dot to see that skill, then Practice this skill to work on it directly — ' +
+        'in whatever order you like, not just the app\'s suggested one. The tree runs top to bottom in teaching order, ' +
         'and a skill only opens up once the skills it depends on are mastered — which is why some later dots are still faded.</div>';
     }
 
@@ -464,11 +481,13 @@
     }
     if (tab === 'map') {
       var det = node.querySelector('#skilldetail');
+      wirePracticeButton(det);
       node.querySelectorAll('.dots .dot').forEach(function (d) {
         d.onclick = function () {
           node.querySelectorAll('.dots .dot').forEach(function (x) { x.classList.remove('sel'); });
           d.classList.add('sel');
           det.innerHTML = detailHTML(d.dataset.slug, d.dataset.slug === E.nextFocus());
+          wirePracticeButton(det);
           det.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
         };
       });

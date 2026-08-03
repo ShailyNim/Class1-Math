@@ -1,0 +1,232 @@
+{
+ "schema": 2,
+ "curriculum": "math-grade-1",
+ "locale": "en-IN",
+ "updated": "2026-08-03T09:54:57.893Z",
+ "practiceDays": [
+  "2026-08-02",
+  "2026-08-03"
+ ],
+ "awardsShown": [
+  "🌈",
+  "🌈",
+  "🌸",
+  "🌟",
+  "🦋",
+  "🌟",
+  "🍀",
+  "🌈",
+  "🦉",
+  "🌟",
+  "🐣",
+  "🌸",
+  "🌈"
+ ],
+ "skills": {
+  "count-to-10": {
+   "p": 0.9999999374878549,
+   "status": "mastered",
+   "attempts": 8,
+   "correct": 8,
+   "topTier": 3,
+   "tierHits": 4,
+   "lastPractised": "2026-08-02",
+   "masteredOn": "2026-08-02",
+   "misconceptions": {}
+  },
+  "fill-a-ten-frame": {
+   "p": 0.9999999931203475,
+   "status": "mastered",
+   "attempts": 10,
+   "correct": 10,
+   "topTier": 3,
+   "tierHits": 4,
+   "lastPractised": "2026-08-02",
+   "masteredOn": "2026-08-02",
+   "misconceptions": {}
+  },
+  "count-to-20": {
+   "p": 0.9999996459665526,
+   "status": "mastered",
+   "attempts": 11,
+   "correct": 9,
+   "topTier": 4,
+   "tierHits": 4,
+   "lastPractised": "2026-08-02",
+   "masteredOn": "2026-08-02",
+   "misconceptions": {
+    "off_by_one": 1,
+    "unmatched_wrong": 1
+   }
+  },
+  "count-tens-ones-to-30": {
+   "p": 0.9999998275598329,
+   "status": "mastered",
+   "attempts": 10,
+   "correct": 9,
+   "topTier": 4,
+   "tierHits": 4,
+   "lastPractised": "2026-08-02",
+   "masteredOn": "2026-08-02",
+   "misconceptions": {
+    "off_by_ten": 1
+   }
+  },
+  "count-ten-frames-to-40": {
+   "p": 0.9999965963155056,
+   "status": "mastered",
+   "attempts": 10,
+   "correct": 9,
+   "topTier": 4,
+   "tierHits": 4,
+   "lastPractised": "2026-08-02",
+   "masteredOn": "2026-08-02",
+   "misconceptions": {
+    "miscounted_frames": 1
+   }
+  },
+  "count-to-100": {
+   "p": 0.9946697080006449,
+   "status": "mastered",
+   "attempts": 23,
+   "correct": 13,
+   "topTier": 4,
+   "tierHits": 4,
+   "lastPractised": "2026-08-02",
+   "masteredOn": "2026-08-02",
+   "misconceptions": {
+    "reversed_digits": 2,
+    "unmatched_wrong": 8
+   }
+  },
+  "count-tens-ones-to-99": {
+   "p": 0.9999994841252836,
+   "status": "mastered",
+   "attempts": 9,
+   "correct": 8,
+   "topTier": 4,
+   "tierHits": 4,
+   "lastPractised": "2026-08-02",
+   "masteredOn": "2026-08-02",
+   "misconceptions": {
+    "unmatched_wrong": 1
+   }
+  },
+  "skip-count-with-pictures": {
+   "p": 0.9999994777316363,
+   "status": "mastered",
+   "attempts": 9,
+   "correct": 8,
+   "topTier": 4,
+   "tierHits": 4,
+   "lastPractised": "2026-08-02",
+   "masteredOn": "2026-08-02",
+   "misconceptions": {
+    "unmatched_wrong": 1
+   }
+  },
+  "skip-count-by-2-5-10": {
+   "p": 0.9999984377951501,
+   "status": "mastered",
+   "attempts": 8,
+   "correct": 8,
+   "topTier": 4,
+   "tierHits": 4,
+   "lastPractised": "2026-08-02",
+   "masteredOn": "2026-08-02",
+   "misconceptions": {}
+  },
+  "count-forward-backward": {
+   "p": 0.999995980727597,
+   "status": "mastered",
+   "attempts": 13,
+   "correct": 10,
+   "topTier": 4,
+   "tierHits": 4,
+   "lastPractised": "2026-08-02",
+   "masteredOn": "2026-08-02",
+   "misconceptions": {
+    "unmatched_wrong": 3
+   }
+  },
+  "number-line-to-100": {
+   "p": 0.9999999374878549,
+   "status": "mastered",
+   "attempts": 8,
+   "correct": 8,
+   "topTier": 4,
+   "tierHits": 4,
+   "lastPractised": "2026-08-02",
+   "masteredOn": "2026-08-02",
+   "misconceptions": {}
+  },
+  "hundred-chart": {
+   "p": 0.9999939449897267,
+   "status": "mastered",
+   "attempts": 19,
+   "correct": 13,
+   "topTier": 4,
+   "tierHits": 4,
+   "lastPractised": "2026-08-03",
+   "masteredOn": "2026-08-03",
+   "misconceptions": {
+    "off_by_one": 4,
+    "wrong_row": 1,
+    "unmatched_wrong": 1
+   }
+  },
+  "even-or-odd-groups": {
+   "p": 0.9449818153313461,
+   "status": "mastered",
+   "attempts": 20,
+   "correct": 14,
+   "topTier": 3,
+   "tierHits": 4,
+   "lastPractised": "2026-08-03",
+   "masteredOn": "2026-08-03",
+   "misconceptions": {
+    "unmatched_wrong": 6
+   }
+  },
+  "identify-even-odd": {
+   "p": 0.9566515074937875,
+   "status": "mastered",
+   "attempts": 14,
+   "correct": 11,
+   "topTier": 4,
+   "tierHits": 4,
+   "lastPractised": "2026-08-03",
+   "masteredOn": "2026-08-03",
+   "misconceptions": {
+    "unmatched_wrong": 3
+   }
+  },
+  "even-odd-on-number-line": {
+   "p": 0.9573233212502839,
+   "status": "mastered",
+   "attempts": 16,
+   "correct": 12,
+   "topTier": 4,
+   "tierHits": 4,
+   "lastPractised": "2026-08-03",
+   "masteredOn": "2026-08-03",
+   "misconceptions": {
+    "unmatched_wrong": 4
+   }
+  },
+  "even-odd-before-after": {
+   "p": 0.9999981169938132,
+   "status": "developing",
+   "attempts": 12,
+   "correct": 10,
+   "topTier": 4,
+   "tierHits": 3,
+   "lastPractised": "2026-08-03",
+   "masteredOn": null,
+   "misconceptions": {
+    "ignored_even_odd": 1,
+    "unmatched_wrong": 1
+   }
+  }
+ }
+}

@@ -1,0 +1,2306 @@
+window.CURRICULUM = {
+"id": "math-grade-1",
+"title": "Class 1 Maths",
+"locale": "en-IN",
+"sections": [
+{
+"letter": "A",
+"title": "Counting and number patterns",
+"order": 1,
+"strand": "number"
+},
+{
+"letter": "B",
+"title": "Place value",
+"order": 2,
+"strand": "number"
+},
+{
+"letter": "C",
+"title": "Understand addition",
+"order": 3,
+"strand": "operations"
+},
+{
+"letter": "D",
+"title": "Addition skill builders",
+"order": 4,
+"strand": "operations"
+},
+{
+"letter": "E",
+"title": "Addition",
+"order": 5,
+"strand": "operations"
+},
+{
+"letter": "F",
+"title": "Addition strategies",
+"order": 6,
+"strand": "operations"
+},
+{
+"letter": "G",
+"title": "Understand subtraction",
+"order": 7,
+"strand": "operations"
+},
+{
+"letter": "H",
+"title": "Subtraction skill builders",
+"order": 8,
+"strand": "operations"
+},
+{
+"letter": "I",
+"title": "Subtraction",
+"order": 9,
+"strand": "operations"
+},
+{
+"letter": "J",
+"title": "Subtraction strategies",
+"order": 10,
+"strand": "operations"
+},
+{
+"letter": "K",
+"title": "Comparing",
+"order": 11,
+"strand": "number"
+},
+{
+"letter": "L",
+"title": "Estimation",
+"order": 12,
+"strand": "number"
+},
+{
+"letter": "M",
+"title": "Flat shapes",
+"order": 13,
+"strand": "geometry"
+},
+{
+"letter": "N",
+"title": "Solid shapes",
+"order": 14,
+"strand": "geometry"
+},
+{
+"letter": "O",
+"title": "Where things are",
+"order": 15,
+"strand": "geometry"
+},
+{
+"letter": "P",
+"title": "Data and graphs",
+"order": 16,
+"strand": "data"
+},
+{
+"letter": "Q",
+"title": "Measurement",
+"order": 17,
+"strand": "measurement"
+},
+{
+"letter": "R",
+"title": "Money",
+"order": 18,
+"strand": "measurement"
+},
+{
+"letter": "S",
+"title": "Patterns",
+"order": 19,
+"strand": "number"
+},
+{
+"letter": "T",
+"title": "How likely?",
+"order": 20,
+"strand": "data"
+},
+{
+"letter": "U",
+"title": "Sorting and ordering",
+"order": 21,
+"strand": "data"
+},
+{
+"letter": "V",
+"title": "Time",
+"order": 22,
+"strand": "measurement"
+},
+{
+"letter": "W",
+"title": "Mixed operations",
+"order": 23,
+"strand": "operations"
+}
+],
+"skills": [
+{
+"slug": "count-to-10",
+"title": "Count objects up to 10",
+"section": "A",
+"sectionOrder": 1,
+"strand": "number",
+"order": 1,
+"maxTier": 3,
+"prerequisiteSkillIds": []
+},
+{
+"slug": "fill-a-ten-frame",
+"title": "Fill a ten frame",
+"section": "A",
+"sectionOrder": 2,
+"strand": "number",
+"order": 2,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"count-to-10"
+]
+},
+{
+"slug": "count-to-20",
+"title": "Count objects up to 20",
+"section": "A",
+"sectionOrder": 3,
+"strand": "number",
+"order": 3,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"count-to-10"
+]
+},
+{
+"slug": "count-tens-ones-to-30",
+"title": "Count tens and ones up to 30",
+"section": "A",
+"sectionOrder": 4,
+"strand": "number",
+"order": 4,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"count-to-20",
+"fill-a-ten-frame"
+]
+},
+{
+"slug": "count-ten-frames-to-40",
+"title": "Count ten frames up to 40",
+"section": "A",
+"sectionOrder": 5,
+"strand": "number",
+"order": 5,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"count-tens-ones-to-30"
+]
+},
+{
+"slug": "count-to-100",
+"title": "Count up to 100",
+"section": "A",
+"sectionOrder": 6,
+"strand": "number",
+"order": 6,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"count-to-20"
+]
+},
+{
+"slug": "count-tens-ones-to-99",
+"title": "Count tens and ones up to 99",
+"section": "A",
+"sectionOrder": 7,
+"strand": "number",
+"order": 7,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"count-tens-ones-to-30",
+"count-to-100"
+]
+},
+{
+"slug": "skip-count-with-pictures",
+"title": "Skip count with pictures",
+"section": "A",
+"sectionOrder": 8,
+"strand": "number",
+"order": 8,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"count-to-20"
+]
+},
+{
+"slug": "skip-count-by-2-5-10",
+"title": "Skip count by 2, 5 and 10",
+"section": "A",
+"sectionOrder": 9,
+"strand": "number",
+"order": 9,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"skip-count-with-pictures",
+"count-to-100"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "count-forward-backward",
+"title": "Count forward and backward",
+"section": "A",
+"sectionOrder": 10,
+"strand": "number",
+"order": 10,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"count-to-100"
+]
+},
+{
+"slug": "number-line-to-100",
+"title": "Find numbers on a number line to 100",
+"section": "A",
+"sectionOrder": 11,
+"strand": "number",
+"order": 11,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"count-to-100"
+]
+},
+{
+"slug": "hundred-chart",
+"title": "Read a hundred chart",
+"section": "A",
+"sectionOrder": 12,
+"strand": "number",
+"order": 12,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"count-to-100"
+]
+},
+{
+"slug": "even-or-odd-groups",
+"title": "Even or odd groups of objects",
+"section": "A",
+"sectionOrder": 13,
+"strand": "number",
+"order": 13,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"count-to-20"
+]
+},
+{
+"slug": "identify-even-odd",
+"title": "Identify even and odd numbers",
+"section": "A",
+"sectionOrder": 14,
+"strand": "number",
+"order": 14,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"even-or-odd-groups"
+]
+},
+{
+"slug": "even-odd-on-number-line",
+"title": "Even and odd numbers on a number line",
+"section": "A",
+"sectionOrder": 15,
+"strand": "number",
+"order": 15,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"identify-even-odd",
+"number-line-to-100"
+]
+},
+{
+"slug": "even-odd-before-after",
+"title": "The even or odd number before and after",
+"section": "A",
+"sectionOrder": 16,
+"strand": "number",
+"order": 16,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"identify-even-odd",
+"count-forward-backward"
+]
+},
+{
+"slug": "skip-count-patterns-table",
+"title": "Skip counting patterns in a table",
+"section": "A",
+"sectionOrder": 17,
+"strand": "number",
+"order": 17,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"skip-count-by-2-5-10",
+"hundred-chart"
+]
+},
+{
+"slug": "sequences-count-up-down",
+"title": "Number sequences up and down",
+"section": "A",
+"sectionOrder": 18,
+"strand": "number",
+"order": 18,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"skip-count-by-2-5-10",
+"count-forward-backward"
+]
+},
+{
+"slug": "sequences-by-100",
+"title": "Number sequences counting by 100",
+"section": "A",
+"sectionOrder": 19,
+"strand": "number",
+"order": 19,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"sequences-count-up-down"
+]
+},
+{
+"slug": "ordinal-numbers",
+"title": "Ordinal numbers",
+"section": "A",
+"sectionOrder": 20,
+"strand": "number",
+"order": 20,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"count-to-20"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "write-numbers-in-words",
+"title": "Write numbers in words",
+"section": "A",
+"sectionOrder": 21,
+"strand": "number",
+"order": 21,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"count-to-20"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "place-value-blocks-tens-ones",
+"title": "Build tens and ones with blocks",
+"section": "B",
+"sectionOrder": 1,
+"strand": "number",
+"order": 22,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"count-tens-ones-to-30"
+]
+},
+{
+"slug": "place-value-blocks-to-hundred",
+"title": "Build numbers up to a hundred with blocks",
+"section": "B",
+"sectionOrder": 2,
+"strand": "number",
+"order": 23,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"place-value-blocks-tens-ones",
+"count-to-100"
+]
+},
+{
+"slug": "write-tens-ones-to-30",
+"title": "Write tens and ones up to 30",
+"section": "B",
+"sectionOrder": 3,
+"strand": "number",
+"order": 24,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"place-value-blocks-tens-ones"
+]
+},
+{
+"slug": "write-tens-ones-to-100",
+"title": "Write tens and ones up to 100",
+"section": "B",
+"sectionOrder": 4,
+"strand": "number",
+"order": 25,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"write-tens-ones-to-30",
+"count-tens-ones-to-99"
+]
+},
+{
+"slug": "add-with-pictures-to-10",
+"title": "Add with pictures, sums up to 10",
+"section": "C",
+"sectionOrder": 1,
+"strand": "operations",
+"order": 26,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"count-to-10"
+],
+"halfLifeDays": 120
+},
+{
+"slug": "addition-sentences-to-10",
+"title": "Write addition sentences, sums up to 10",
+"section": "C",
+"sectionOrder": 2,
+"strand": "operations",
+"order": 27,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"add-with-pictures-to-10"
+],
+"halfLifeDays": 120
+},
+{
+"slug": "add-on-number-line-to-10",
+"title": "Add on a number line, sums up to 10",
+"section": "C",
+"sectionOrder": 3,
+"strand": "operations",
+"order": 28,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"add-with-pictures-to-10",
+"number-line-to-100"
+]
+},
+{
+"slug": "add-zero",
+"title": "Add zero",
+"section": "C",
+"sectionOrder": 4,
+"strand": "operations",
+"order": 29,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"addition-sentences-to-10"
+]
+},
+{
+"slug": "add-1",
+"title": "Add 1",
+"section": "D",
+"sectionOrder": 1,
+"strand": "operations",
+"order": 30,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"addition-sentences-to-10"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "add-2",
+"title": "Add 2",
+"section": "D",
+"sectionOrder": 2,
+"strand": "operations",
+"order": 31,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"addition-sentences-to-10"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "add-3",
+"title": "Add 3",
+"section": "D",
+"sectionOrder": 3,
+"strand": "operations",
+"order": 32,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"add-2"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "add-4",
+"title": "Add 4",
+"section": "D",
+"sectionOrder": 4,
+"strand": "operations",
+"order": 33,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"add-2"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "add-5",
+"title": "Add 5",
+"section": "D",
+"sectionOrder": 5,
+"strand": "operations",
+"order": 34,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"add-2"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "add-6",
+"title": "Add 6",
+"section": "D",
+"sectionOrder": 6,
+"strand": "operations",
+"order": 35,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"add-5"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "add-7",
+"title": "Add 7",
+"section": "D",
+"sectionOrder": 7,
+"strand": "operations",
+"order": 36,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"add-5"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "add-8",
+"title": "Add 8",
+"section": "D",
+"sectionOrder": 8,
+"strand": "operations",
+"order": 37,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"add-5"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "add-9",
+"title": "Add 9",
+"section": "D",
+"sectionOrder": 9,
+"strand": "operations",
+"order": 38,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"add-5"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "add-0",
+"title": "Add 0",
+"section": "D",
+"sectionOrder": 10,
+"strand": "operations",
+"order": 39,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"add-zero"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "addition-facts-to-10",
+"title": "Addition facts, sums up to 10",
+"section": "E",
+"sectionOrder": 1,
+"strand": "operations",
+"order": 40,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"add-6",
+"add-7",
+"add-8",
+"add-9",
+"add-0"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "ways-to-make-a-number-addition",
+"title": "Ways to make a number by adding",
+"section": "E",
+"sectionOrder": 2,
+"strand": "operations",
+"order": 41,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"addition-facts-to-10"
+]
+},
+{
+"slug": "make-a-number-with-addition-to-10",
+"title": "Make a number by adding, up to 10",
+"section": "E",
+"sectionOrder": 3,
+"strand": "operations",
+"order": 42,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"ways-to-make-a-number-addition"
+]
+},
+{
+"slug": "complete-addition-sentence-to-10",
+"title": "Complete the addition sentence, up to 10",
+"section": "E",
+"sectionOrder": 4,
+"strand": "operations",
+"order": 43,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"addition-facts-to-10"
+]
+},
+{
+"slug": "addition-word-problems-to-10",
+"title": "Addition word problems, sums up to 10",
+"section": "E",
+"sectionOrder": 5,
+"strand": "operations",
+"order": 44,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"addition-facts-to-10"
+],
+"halfLifeDays": 120
+},
+{
+"slug": "addition-sentences-for-word-problems-to-10",
+"title": "Write the addition sentence for a word problem, up to 10",
+"section": "E",
+"sectionOrder": 6,
+"strand": "operations",
+"order": 45,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"addition-word-problems-to-10"
+],
+"halfLifeDays": 120
+},
+{
+"slug": "addition-facts-to-18",
+"title": "Addition facts, sums up to 18",
+"section": "E",
+"sectionOrder": 7,
+"strand": "operations",
+"order": 46,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"addition-facts-to-10",
+"count-to-20"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "add-on-number-line-to-18",
+"title": "Add on a number line, sums up to 18",
+"section": "E",
+"sectionOrder": 8,
+"strand": "operations",
+"order": 47,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"add-on-number-line-to-10",
+"addition-facts-to-18"
+]
+},
+{
+"slug": "addition-word-problems-to-18",
+"title": "Addition word problems, sums up to 18",
+"section": "E",
+"sectionOrder": 9,
+"strand": "operations",
+"order": 48,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"addition-facts-to-18",
+"addition-word-problems-to-10"
+],
+"halfLifeDays": 120
+},
+{
+"slug": "addition-sentences-for-word-problems-to-18",
+"title": "Write the addition sentence for a word problem, up to 18",
+"section": "E",
+"sectionOrder": 10,
+"strand": "operations",
+"order": 49,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"addition-word-problems-to-18",
+"addition-sentences-for-word-problems-to-10"
+],
+"halfLifeDays": 120
+},
+{
+"slug": "addition-facts-to-20",
+"title": "Addition facts, sums up to 20",
+"section": "E",
+"sectionOrder": 11,
+"strand": "operations",
+"order": 50,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"addition-facts-to-18"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "make-a-number-with-addition-to-20",
+"title": "Make a number by adding, up to 20",
+"section": "E",
+"sectionOrder": 12,
+"strand": "operations",
+"order": 51,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"addition-facts-to-20",
+"make-a-number-with-addition-to-10"
+]
+},
+{
+"slug": "addition-sentences-for-word-problems-to-20",
+"title": "Write the addition sentence for a word problem, up to 20",
+"section": "E",
+"sectionOrder": 13,
+"strand": "operations",
+"order": 52,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"addition-facts-to-20",
+"addition-sentences-for-word-problems-to-18"
+],
+"halfLifeDays": 120
+},
+{
+"slug": "related-addition-facts",
+"title": "Related addition facts",
+"section": "E",
+"sectionOrder": 14,
+"strand": "operations",
+"order": 53,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"addition-facts-to-18"
+]
+},
+{
+"slug": "addition-true-or-false",
+"title": "Is the addition sentence true?",
+"section": "E",
+"sectionOrder": 15,
+"strand": "operations",
+"order": 54,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"addition-facts-to-18"
+]
+},
+{
+"slug": "add-1-digit-to-2-digit-no-regroup",
+"title": "Add a one-digit number to a two-digit number, no regrouping",
+"section": "E",
+"sectionOrder": 16,
+"strand": "operations",
+"order": 55,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"addition-facts-to-10",
+"write-tens-ones-to-100"
+]
+},
+{
+"slug": "add-1-digit-to-2-digit-regroup",
+"title": "Add a one-digit number to a two-digit number, with regrouping",
+"section": "E",
+"sectionOrder": 17,
+"strand": "operations",
+"order": 56,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"add-1-digit-to-2-digit-no-regroup",
+"complete-sentence-make-ten"
+]
+},
+{
+"slug": "add-doubles",
+"title": "Add doubles",
+"section": "F",
+"sectionOrder": 1,
+"strand": "operations",
+"order": 57,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"addition-facts-to-10"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "add-doubles-plus-one",
+"title": "Add using doubles plus one",
+"section": "F",
+"sectionOrder": 2,
+"strand": "operations",
+"order": 58,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"add-doubles"
+]
+},
+{
+"slug": "add-doubles-minus-one",
+"title": "Add using doubles minus one",
+"section": "F",
+"sectionOrder": 3,
+"strand": "operations",
+"order": 59,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"add-doubles"
+]
+},
+{
+"slug": "add-three-using-doubles",
+"title": "Add three numbers using doubles",
+"section": "F",
+"sectionOrder": 4,
+"strand": "operations",
+"order": 60,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"add-doubles",
+"addition-facts-to-18"
+]
+},
+{
+"slug": "complete-sentence-make-ten",
+"title": "Complete the addition sentence to make ten",
+"section": "F",
+"sectionOrder": 5,
+"strand": "operations",
+"order": 61,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"fill-a-ten-frame",
+"addition-facts-to-10"
+]
+},
+{
+"slug": "add-three-numbers",
+"title": "Add three numbers",
+"section": "F",
+"sectionOrder": 6,
+"strand": "operations",
+"order": 62,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"addition-facts-to-18"
+]
+},
+{
+"slug": "add-three-make-ten",
+"title": "Add three numbers by making ten",
+"section": "F",
+"sectionOrder": 7,
+"strand": "operations",
+"order": 63,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"complete-sentence-make-ten",
+"add-three-numbers"
+]
+},
+{
+"slug": "add-two-multiples-of-ten",
+"title": "Add two multiples of ten",
+"section": "F",
+"sectionOrder": 8,
+"strand": "operations",
+"order": 64,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"count-tens-ones-to-99",
+"addition-facts-to-10"
+]
+},
+{
+"slug": "add-a-multiple-of-ten",
+"title": "Add a multiple of ten",
+"section": "F",
+"sectionOrder": 9,
+"strand": "operations",
+"order": 65,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"add-two-multiples-of-ten",
+"write-tens-ones-to-100"
+]
+},
+{
+"slug": "add-three-numbers-word-problems",
+"title": "Word problems adding three numbers",
+"section": "F",
+"sectionOrder": 10,
+"strand": "operations",
+"order": 66,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"add-three-numbers",
+"addition-word-problems-to-18"
+],
+"halfLifeDays": 120
+},
+{
+"slug": "subtract-with-pictures-to-10",
+"title": "Take away with pictures, up to 10",
+"section": "G",
+"sectionOrder": 1,
+"strand": "operations",
+"order": 67,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"add-with-pictures-to-10"
+],
+"halfLifeDays": 120
+},
+{
+"slug": "subtraction-sentences-to-10",
+"title": "Write subtraction sentences, up to 10",
+"section": "G",
+"sectionOrder": 2,
+"strand": "operations",
+"order": 68,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"subtract-with-pictures-to-10"
+],
+"halfLifeDays": 120
+},
+{
+"slug": "subtract-on-number-line-to-10",
+"title": "Subtract on a number line, up to 10",
+"section": "G",
+"sectionOrder": 3,
+"strand": "operations",
+"order": 69,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"subtract-with-pictures-to-10",
+"number-line-to-100"
+]
+},
+{
+"slug": "subtract-zero-and-all",
+"title": "Subtract zero and subtract all",
+"section": "G",
+"sectionOrder": 4,
+"strand": "operations",
+"order": 70,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"subtraction-sentences-to-10"
+]
+},
+{
+"slug": "subtract-1",
+"title": "Subtract 1",
+"section": "H",
+"sectionOrder": 1,
+"strand": "operations",
+"order": 71,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"subtraction-sentences-to-10"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "subtract-2",
+"title": "Subtract 2",
+"section": "H",
+"sectionOrder": 2,
+"strand": "operations",
+"order": 72,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"subtraction-sentences-to-10"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "subtract-3",
+"title": "Subtract 3",
+"section": "H",
+"sectionOrder": 3,
+"strand": "operations",
+"order": 73,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"subtract-2"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "subtract-4",
+"title": "Subtract 4",
+"section": "H",
+"sectionOrder": 4,
+"strand": "operations",
+"order": 74,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"subtract-2"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "subtract-5",
+"title": "Subtract 5",
+"section": "H",
+"sectionOrder": 5,
+"strand": "operations",
+"order": 75,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"subtract-2"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "subtract-6",
+"title": "Subtract 6",
+"section": "H",
+"sectionOrder": 6,
+"strand": "operations",
+"order": 76,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"subtract-5"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "subtract-7",
+"title": "Subtract 7",
+"section": "H",
+"sectionOrder": 7,
+"strand": "operations",
+"order": 77,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"subtract-5"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "subtract-8",
+"title": "Subtract 8",
+"section": "H",
+"sectionOrder": 8,
+"strand": "operations",
+"order": 78,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"subtract-5"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "subtract-9",
+"title": "Subtract 9",
+"section": "H",
+"sectionOrder": 9,
+"strand": "operations",
+"order": 79,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"subtract-5"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "subtract-0",
+"title": "Subtract 0",
+"section": "H",
+"sectionOrder": 10,
+"strand": "operations",
+"order": 80,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"subtract-zero-and-all"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "subtraction-facts-to-10",
+"title": "Subtraction facts, numbers up to 10",
+"section": "I",
+"sectionOrder": 1,
+"strand": "operations",
+"order": 81,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"subtract-6",
+"subtract-7",
+"subtract-8",
+"subtract-9",
+"subtract-0"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "ways-to-make-a-number-subtraction",
+"title": "Ways to make a number by subtracting",
+"section": "I",
+"sectionOrder": 2,
+"strand": "operations",
+"order": 82,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"subtraction-facts-to-10"
+]
+},
+{
+"slug": "ways-to-subtract-from-a-number",
+"title": "Ways to subtract from a number",
+"section": "I",
+"sectionOrder": 3,
+"strand": "operations",
+"order": 83,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"subtraction-facts-to-10"
+]
+},
+{
+"slug": "make-a-number-with-subtraction-to-10",
+"title": "Make a number by subtracting, up to 10",
+"section": "I",
+"sectionOrder": 4,
+"strand": "operations",
+"order": 84,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"ways-to-make-a-number-subtraction"
+]
+},
+{
+"slug": "complete-subtraction-sentence",
+"title": "Complete the subtraction sentence",
+"section": "I",
+"sectionOrder": 5,
+"strand": "operations",
+"order": 85,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"subtraction-facts-to-10"
+]
+},
+{
+"slug": "subtraction-word-problems-to-10",
+"title": "Subtraction word problems, up to 10",
+"section": "I",
+"sectionOrder": 6,
+"strand": "operations",
+"order": 86,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"subtraction-facts-to-10"
+],
+"halfLifeDays": 120
+},
+{
+"slug": "subtraction-sentences-for-word-problems-to-10",
+"title": "Write the subtraction sentence for a word problem, up to 10",
+"section": "I",
+"sectionOrder": 7,
+"strand": "operations",
+"order": 87,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"subtraction-word-problems-to-10"
+],
+"halfLifeDays": 120
+},
+{
+"slug": "subtraction-facts-to-18",
+"title": "Subtraction facts, numbers up to 18",
+"section": "I",
+"sectionOrder": 8,
+"strand": "operations",
+"order": 88,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"subtraction-facts-to-10",
+"count-to-20"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "subtract-on-number-line-to-18",
+"title": "Subtract on a number line, up to 18",
+"section": "I",
+"sectionOrder": 9,
+"strand": "operations",
+"order": 89,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"subtract-on-number-line-to-10",
+"subtraction-facts-to-18"
+]
+},
+{
+"slug": "subtraction-word-problems-to-18",
+"title": "Subtraction word problems, up to 18",
+"section": "I",
+"sectionOrder": 10,
+"strand": "operations",
+"order": 90,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"subtraction-facts-to-18",
+"subtraction-word-problems-to-10"
+],
+"halfLifeDays": 120
+},
+{
+"slug": "subtraction-sentences-for-word-problems-to-18",
+"title": "Write the subtraction sentence for a word problem, up to 18",
+"section": "I",
+"sectionOrder": 11,
+"strand": "operations",
+"order": 91,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"subtraction-word-problems-to-18",
+"subtraction-sentences-for-word-problems-to-10"
+],
+"halfLifeDays": 120
+},
+{
+"slug": "make-a-number-with-subtraction-to-20",
+"title": "Make a number by subtracting, up to 20",
+"section": "I",
+"sectionOrder": 12,
+"strand": "operations",
+"order": 92,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"subtraction-facts-to-18",
+"make-a-number-with-subtraction-to-10"
+]
+},
+{
+"slug": "related-subtraction-facts",
+"title": "Related subtraction facts",
+"section": "I",
+"sectionOrder": 13,
+"strand": "operations",
+"order": 93,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"subtraction-facts-to-18"
+]
+},
+{
+"slug": "subtraction-true-or-false",
+"title": "Is the subtraction sentence true?",
+"section": "I",
+"sectionOrder": 14,
+"strand": "operations",
+"order": 94,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"subtraction-facts-to-18"
+]
+},
+{
+"slug": "subtract-1-digit-from-2-digit-no-regroup",
+"title": "Subtract a one-digit number from a two-digit number, no regrouping",
+"section": "I",
+"sectionOrder": 15,
+"strand": "operations",
+"order": 95,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"subtraction-facts-to-10",
+"write-tens-ones-to-100"
+]
+},
+{
+"slug": "subtract-1-digit-from-2-digit-regroup",
+"title": "Subtract a one-digit number from a two-digit number, with regrouping",
+"section": "I",
+"sectionOrder": 16,
+"strand": "operations",
+"order": 96,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"subtract-1-digit-from-2-digit-no-regroup"
+]
+},
+{
+"slug": "relate-addition-subtraction",
+"title": "Relate addition and subtraction",
+"section": "J",
+"sectionOrder": 1,
+"strand": "operations",
+"order": 97,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"addition-facts-to-18",
+"subtraction-facts-to-18"
+]
+},
+{
+"slug": "subtract-doubles",
+"title": "Subtract doubles",
+"section": "J",
+"sectionOrder": 2,
+"strand": "operations",
+"order": 98,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"add-doubles",
+"subtraction-facts-to-18"
+]
+},
+{
+"slug": "subtract-multiples-of-ten",
+"title": "Subtract two multiples of ten",
+"section": "J",
+"sectionOrder": 3,
+"strand": "operations",
+"order": 99,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"add-two-multiples-of-ten",
+"subtraction-facts-to-10"
+]
+},
+{
+"slug": "subtract-a-multiple-of-ten",
+"title": "Subtract a multiple of ten",
+"section": "J",
+"sectionOrder": 4,
+"strand": "operations",
+"order": 100,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"subtract-multiples-of-ten",
+"write-tens-ones-to-100"
+]
+},
+{
+"slug": "compare-more-fewer",
+"title": "More, fewer or the same",
+"section": "K",
+"sectionOrder": 1,
+"strand": "number",
+"order": 101,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"count-to-10"
+]
+},
+{
+"slug": "compare-numbers-to-10",
+"title": "Compare numbers up to 10",
+"section": "K",
+"sectionOrder": 2,
+"strand": "number",
+"order": 102,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"compare-more-fewer"
+]
+},
+{
+"slug": "compare-numbers-to-100",
+"title": "Compare numbers up to 100",
+"section": "K",
+"sectionOrder": 3,
+"strand": "number",
+"order": 103,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"compare-numbers-to-10",
+"count-tens-ones-to-99"
+]
+},
+{
+"slug": "comparison-word-problems",
+"title": "Comparison word problems",
+"section": "K",
+"sectionOrder": 4,
+"strand": "number",
+"order": 104,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"compare-numbers-to-100",
+"subtraction-word-problems-to-18"
+],
+"halfLifeDays": 120
+},
+{
+"slug": "estimate-to-nearest-ten",
+"title": "Estimate to the nearest ten",
+"section": "L",
+"sectionOrder": 1,
+"strand": "number",
+"order": 105,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"count-tens-ones-to-99",
+"number-line-to-100"
+]
+},
+{
+"slug": "name-2d-shapes",
+"title": "Name a flat shape",
+"section": "M",
+"sectionOrder": 1,
+"strand": "geometry",
+"order": 106,
+"maxTier": 3,
+"prerequisiteSkillIds": [],
+"halfLifeDays": 60
+},
+{
+"slug": "select-2d-shapes",
+"title": "Find the flat shape",
+"section": "M",
+"sectionOrder": 2,
+"strand": "geometry",
+"order": 107,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"name-2d-shapes"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "count-sides-vertices",
+"title": "Count sides and corners",
+"section": "M",
+"sectionOrder": 3,
+"strand": "geometry",
+"order": 108,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"name-2d-shapes"
+]
+},
+{
+"slug": "compare-sides-vertices",
+"title": "Compare sides and corners",
+"section": "M",
+"sectionOrder": 4,
+"strand": "geometry",
+"order": 109,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"count-sides-vertices"
+]
+},
+{
+"slug": "open-closed-shapes",
+"title": "Open and closed shapes",
+"section": "M",
+"sectionOrder": 5,
+"strand": "geometry",
+"order": 110,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"name-2d-shapes"
+]
+},
+{
+"slug": "flip-turn-slide",
+"title": "Flip, turn and slide",
+"section": "M",
+"sectionOrder": 6,
+"strand": "geometry",
+"order": 111,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"name-2d-shapes"
+]
+},
+{
+"slug": "symmetry",
+"title": "Lines of symmetry",
+"section": "M",
+"sectionOrder": 7,
+"strand": "geometry",
+"order": 112,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"flip-turn-slide"
+]
+},
+{
+"slug": "flat-vs-solid-shapes",
+"title": "Flat shapes and solid shapes",
+"section": "N",
+"sectionOrder": 1,
+"strand": "geometry",
+"order": 113,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"name-2d-shapes"
+]
+},
+{
+"slug": "name-3d-shapes",
+"title": "Name a solid shape",
+"section": "N",
+"sectionOrder": 2,
+"strand": "geometry",
+"order": 114,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"flat-vs-solid-shapes"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "cubes-and-cuboids",
+"title": "Cubes and cuboids",
+"section": "N",
+"sectionOrder": 3,
+"strand": "geometry",
+"order": 115,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"name-3d-shapes"
+]
+},
+{
+"slug": "select-3d-shapes",
+"title": "Find the solid shape",
+"section": "N",
+"sectionOrder": 4,
+"strand": "geometry",
+"order": 116,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"name-3d-shapes"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "count-vertices-edges-faces",
+"title": "Count corners, edges and faces",
+"section": "N",
+"sectionOrder": 5,
+"strand": "geometry",
+"order": 117,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"name-3d-shapes",
+"count-sides-vertices"
+]
+},
+{
+"slug": "compare-vertices-edges-faces",
+"title": "Compare corners, edges and faces",
+"section": "N",
+"sectionOrder": 6,
+"strand": "geometry",
+"order": 118,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"count-vertices-edges-faces"
+]
+},
+{
+"slug": "shapes-traced-from-solids",
+"title": "Trace a flat shape from a solid",
+"section": "N",
+"sectionOrder": 7,
+"strand": "geometry",
+"order": 119,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"name-3d-shapes"
+]
+},
+{
+"slug": "faces-of-3d-shapes",
+"title": "Faces of a solid shape",
+"section": "N",
+"sectionOrder": 8,
+"strand": "geometry",
+"order": 120,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"shapes-traced-from-solids"
+]
+},
+{
+"slug": "everyday-objects-shapes-1",
+"title": "Shapes of everyday things I",
+"section": "N",
+"sectionOrder": 9,
+"strand": "geometry",
+"order": 121,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"name-3d-shapes"
+]
+},
+{
+"slug": "everyday-objects-shapes-2",
+"title": "Shapes of everyday things II",
+"section": "N",
+"sectionOrder": 10,
+"strand": "geometry",
+"order": 122,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"everyday-objects-shapes-1"
+]
+},
+{
+"slug": "above-and-below",
+"title": "Above and below",
+"section": "O",
+"sectionOrder": 1,
+"strand": "geometry",
+"order": 123,
+"maxTier": 3,
+"prerequisiteSkillIds": []
+},
+{
+"slug": "beside-and-next-to",
+"title": "Beside and next to",
+"section": "O",
+"sectionOrder": 2,
+"strand": "geometry",
+"order": 124,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"above-and-below"
+]
+},
+{
+"slug": "left-middle-right",
+"title": "Left, middle and right",
+"section": "O",
+"sectionOrder": 3,
+"strand": "geometry",
+"order": 125,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"above-and-below"
+]
+},
+{
+"slug": "top-middle-bottom",
+"title": "Top, middle and bottom",
+"section": "O",
+"sectionOrder": 4,
+"strand": "geometry",
+"order": 126,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"above-and-below"
+]
+},
+{
+"slug": "location-in-a-grid",
+"title": "Find the place on a grid",
+"section": "O",
+"sectionOrder": 5,
+"strand": "geometry",
+"order": 127,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"left-middle-right",
+"top-middle-bottom"
+]
+},
+{
+"slug": "which-pictograph-is-correct",
+"title": "Which picture graph is right?",
+"section": "P",
+"sectionOrder": 1,
+"strand": "data",
+"order": 128,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"count-to-20"
+]
+},
+{
+"slug": "read-pictographs",
+"title": "Read a picture graph",
+"section": "P",
+"sectionOrder": 2,
+"strand": "data",
+"order": 129,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"which-pictograph-is-correct"
+]
+},
+{
+"slug": "which-tally-chart-is-correct",
+"title": "Which tally chart is right?",
+"section": "P",
+"sectionOrder": 3,
+"strand": "data",
+"order": 130,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"skip-count-by-2-5-10"
+]
+},
+{
+"slug": "read-tally-charts",
+"title": "Read a tally chart",
+"section": "P",
+"sectionOrder": 4,
+"strand": "data",
+"order": 131,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"which-tally-chart-is-correct"
+]
+},
+{
+"slug": "record-data-in-tables",
+"title": "Put data into a table",
+"section": "P",
+"sectionOrder": 5,
+"strand": "data",
+"order": 132,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"read-pictographs"
+]
+},
+{
+"slug": "read-data-in-tables",
+"title": "Read data from a table",
+"section": "P",
+"sectionOrder": 6,
+"strand": "data",
+"order": 133,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"record-data-in-tables",
+"compare-numbers-to-10"
+]
+},
+{
+"slug": "long-and-short",
+"title": "Long and short",
+"section": "Q",
+"sectionOrder": 1,
+"strand": "measurement",
+"order": 134,
+"maxTier": 3,
+"prerequisiteSkillIds": []
+},
+{
+"slug": "tall-and-short",
+"title": "Tall and short",
+"section": "Q",
+"sectionOrder": 2,
+"strand": "measurement",
+"order": 135,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"long-and-short"
+]
+},
+{
+"slug": "light-and-heavy",
+"title": "Light and heavy",
+"section": "Q",
+"sectionOrder": 3,
+"strand": "measurement",
+"order": 136,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"long-and-short"
+]
+},
+{
+"slug": "compare-size-and-weight",
+"title": "Compare size and weight",
+"section": "Q",
+"sectionOrder": 4,
+"strand": "measurement",
+"order": 137,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"tall-and-short",
+"light-and-heavy"
+]
+},
+{
+"slug": "measure-with-cubes",
+"title": "Measure with cubes",
+"section": "Q",
+"sectionOrder": 5,
+"strand": "measurement",
+"order": 138,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"long-and-short",
+"count-to-20"
+]
+},
+{
+"slug": "measure-length-cm",
+"title": "Measure length in centimetres",
+"section": "Q",
+"sectionOrder": 6,
+"strand": "measurement",
+"order": 139,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"measure-with-cubes",
+"count-to-100"
+]
+},
+{
+"slug": "coin-and-note-values",
+"title": "Know the coins and notes",
+"section": "R",
+"sectionOrder": 1,
+"strand": "measurement",
+"order": 140,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"count-to-100"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "count-coins",
+"title": "Count coins",
+"section": "R",
+"sectionOrder": 2,
+"strand": "measurement",
+"order": 141,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"coin-and-note-values",
+"skip-count-by-2-5-10"
+]
+},
+{
+"slug": "count-notes",
+"title": "Count notes",
+"section": "R",
+"sectionOrder": 3,
+"strand": "measurement",
+"order": 142,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"coin-and-note-values",
+"skip-count-by-2-5-10"
+]
+},
+{
+"slug": "count-coins-and-notes",
+"title": "Count coins and notes together",
+"section": "R",
+"sectionOrder": 4,
+"strand": "measurement",
+"order": 143,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"count-coins",
+"count-notes"
+]
+},
+{
+"slug": "compare-money-amounts",
+"title": "Which costs more?",
+"section": "R",
+"sectionOrder": 5,
+"strand": "measurement",
+"order": 144,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"count-coins-and-notes",
+"compare-numbers-to-100"
+]
+},
+{
+"slug": "intro-to-patterns",
+"title": "What is a pattern?",
+"section": "S",
+"sectionOrder": 1,
+"strand": "number",
+"order": 145,
+"maxTier": 3,
+"prerequisiteSkillIds": []
+},
+{
+"slug": "next-shape-in-pattern",
+"title": "Find the next shape in a pattern",
+"section": "S",
+"sectionOrder": 2,
+"strand": "number",
+"order": 146,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"intro-to-patterns"
+]
+},
+{
+"slug": "complete-a-pattern",
+"title": "Complete a pattern",
+"section": "S",
+"sectionOrder": 3,
+"strand": "number",
+"order": 147,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"next-shape-in-pattern"
+]
+},
+{
+"slug": "make-a-pattern",
+"title": "Make a pattern",
+"section": "S",
+"sectionOrder": 4,
+"strand": "number",
+"order": 148,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"complete-a-pattern"
+]
+},
+{
+"slug": "growing-patterns",
+"title": "Growing patterns",
+"section": "S",
+"sectionOrder": 5,
+"strand": "number",
+"order": 149,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"complete-a-pattern"
+]
+},
+{
+"slug": "next-shape-growing-pattern",
+"title": "Find the next shape in a growing pattern",
+"section": "S",
+"sectionOrder": 6,
+"strand": "number",
+"order": 150,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"growing-patterns"
+]
+},
+{
+"slug": "next-row-growing-pattern",
+"title": "Find the next row in a growing pattern",
+"section": "S",
+"sectionOrder": 7,
+"strand": "number",
+"order": 151,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"next-shape-growing-pattern",
+"skip-count-by-2-5-10"
+]
+},
+{
+"slug": "more-less-equally-likely",
+"title": "More likely, less likely or the same",
+"section": "T",
+"sectionOrder": 1,
+"strand": "data",
+"order": 152,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"compare-numbers-to-10"
+]
+},
+{
+"slug": "certain-or-impossible",
+"title": "Certain, likely, unlikely or impossible",
+"section": "T",
+"sectionOrder": 2,
+"strand": "data",
+"order": 153,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"more-less-equally-likely"
+]
+},
+{
+"slug": "sort-shapes-venn",
+"title": "Sort shapes into a Venn diagram",
+"section": "U",
+"sectionOrder": 1,
+"strand": "data",
+"order": 154,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"count-sides-vertices"
+]
+},
+{
+"slug": "count-shapes-venn",
+"title": "Count shapes in a Venn diagram",
+"section": "U",
+"sectionOrder": 2,
+"strand": "data",
+"order": 155,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"sort-shapes-venn",
+"count-to-20"
+]
+},
+{
+"slug": "put-numbers-in-order",
+"title": "Put numbers in order",
+"section": "U",
+"sectionOrder": 3,
+"strand": "number",
+"order": 156,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"compare-numbers-to-100"
+]
+},
+{
+"slug": "days-of-the-week",
+"title": "Days of the week",
+"section": "V",
+"sectionOrder": 1,
+"strand": "measurement",
+"order": 157,
+"maxTier": 3,
+"prerequisiteSkillIds": [],
+"halfLifeDays": 60
+},
+{
+"slug": "months-of-the-year",
+"title": "Months of the year",
+"section": "V",
+"sectionOrder": 2,
+"strand": "measurement",
+"order": 158,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"days-of-the-week"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "seasons-of-the-year",
+"title": "Seasons of the year",
+"section": "V",
+"sectionOrder": 3,
+"strand": "measurement",
+"order": 159,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"months-of-the-year"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "read-a-calendar",
+"title": "Read a calendar",
+"section": "V",
+"sectionOrder": 4,
+"strand": "measurement",
+"order": 160,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"months-of-the-year"
+]
+},
+{
+"slug": "read-clock-to-hour",
+"title": "Read a clock to the hour",
+"section": "V",
+"sectionOrder": 5,
+"strand": "measurement",
+"order": 161,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"count-to-20"
+]
+},
+{
+"slug": "read-clock-to-half-hour",
+"title": "Read a clock to the half hour",
+"section": "V",
+"sectionOrder": 6,
+"strand": "measurement",
+"order": 162,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"read-clock-to-hour"
+]
+},
+{
+"slug": "match-clock-to-time",
+"title": "Match a clock to a time",
+"section": "V",
+"sectionOrder": 7,
+"strand": "measurement",
+"order": 163,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"read-clock-to-half-hour"
+]
+},
+{
+"slug": "am-or-pm",
+"title": "Morning or evening",
+"section": "V",
+"sectionOrder": 8,
+"strand": "measurement",
+"order": 164,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"read-clock-to-hour"
+]
+},
+{
+"slug": "ways-to-make-a-number-mixed",
+"title": "Ways to make a number by adding or subtracting",
+"section": "W",
+"sectionOrder": 1,
+"strand": "operations",
+"order": 165,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"ways-to-make-a-number-addition",
+"ways-to-make-a-number-subtraction"
+]
+},
+{
+"slug": "which-sign-makes-it-true",
+"title": "Which sign makes it true?",
+"section": "W",
+"sectionOrder": 2,
+"strand": "operations",
+"order": 166,
+"maxTier": 4,
+"prerequisiteSkillIds": [
+"relate-addition-subtraction"
+]
+},
+{
+"slug": "fact-families",
+"title": "Fact families",
+"section": "W",
+"sectionOrder": 3,
+"strand": "operations",
+"order": 167,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"relate-addition-subtraction"
+]
+},
+{
+"slug": "add-subtract-facts-to-10",
+"title": "Add and subtract facts up to 10",
+"section": "W",
+"sectionOrder": 4,
+"strand": "operations",
+"order": 168,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"addition-facts-to-10",
+"subtraction-facts-to-10"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "add-subtract-facts-to-18",
+"title": "Add and subtract facts up to 18",
+"section": "W",
+"sectionOrder": 5,
+"strand": "operations",
+"order": 169,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"add-subtract-facts-to-10",
+"addition-facts-to-18",
+"subtraction-facts-to-18"
+],
+"halfLifeDays": 60
+},
+{
+"slug": "add-subtract-word-problems",
+"title": "Word problems with adding and taking away",
+"section": "W",
+"sectionOrder": 6,
+"strand": "operations",
+"order": 170,
+"maxTier": 5,
+"prerequisiteSkillIds": [
+"addition-word-problems-to-18",
+"subtraction-word-problems-to-18"
+],
+"halfLifeDays": 120
+},
+{
+"slug": "addition-subtraction-terms",
+"title": "Words we use for adding and taking away",
+"section": "W",
+"sectionOrder": 7,
+"strand": "operations",
+"order": 171,
+"maxTier": 3,
+"prerequisiteSkillIds": [
+"add-subtract-facts-to-10"
+],
+"halfLifeDays": 60
+}
+]
+};

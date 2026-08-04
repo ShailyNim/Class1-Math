@@ -33,7 +33,7 @@
       (s.days ? '<div class="streak">You have practised on ' + s.days + ' day' + (s.days === 1 ? '' : 's') + '.</div>' : '') +
       (shelf ? '<div class="sticker-shelf">' + shelf + '</div>' : '') +
       '</div>');
-    node.querySelector('#start').onclick = startSession;
+    node.querySelector('#start').onclick = function () { startSession(); };
     show(node);
   }
 
